@@ -18,13 +18,13 @@ public class Main {
 class Livro{
     private String nome;
     private Integer ano;
-    private Integer npg;
+    private Integer numeroPagina;
 
 
     public Livro(String nome, Integer ano, Integer npg) {
         this.nome = nome;
         this.ano = ano;
-        this.npg = npg;
+        this.numeroPagina = npg;
     }
 
     public String getNome() {
@@ -43,12 +43,12 @@ class Livro{
         this.ano = ano;
     }
 
-    public Integer getNpg() {
-        return npg;
+    public Integer getNumeroPagina() {
+        return numeroPagina;
     }
 
-    public void setNpg(Integer npg) {
-        this.npg = npg;
+    public void setNumeroPagina(Integer numeroPagina) {
+        this.numeroPagina = numeroPagina;
     }
 
     @Override
@@ -56,7 +56,7 @@ class Livro{
         return "Livro{" +
                 "nome='" + nome + '\'' +
                 ", ano=" + ano +
-                ", npg=" + npg +
+                ", numeroPagina=" + numeroPagina +
                 '}';
     }
 }

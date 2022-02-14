@@ -4,48 +4,48 @@ import java.util.Objects;
 
 public class Dog {
 
-    private String nome;
-    private String raca;
-    private Integer peso;
-    private Integer idade;
+    private String nomeDog;
+    private String racaDog;
+    private Integer pesoDog;
+    private Integer idadeDog;
 
-    public Dog(String nome, String raca, Integer peso, Integer idade) {
-        this.nome = nome;
-        this.raca = raca;
-        this.peso = peso;
-        this.idade = idade;
+    public Dog(String nomeDog, String racaDog, Integer pesoDog, Integer idadeDog) {
+        this.nomeDog = nomeDog;
+        this.racaDog = racaDog;
+        this.pesoDog = pesoDog;
+        this.idadeDog = idadeDog;
     }
 
     public String getNome() {
-        return nome;
+        return nomeDog;
     }
 
     public void setNome(String nome) {
-        this.nome = nome;
+        this.nomeDog = nome;
     }
 
     public String getRaca() {
-        return raca;
+        return racaDog;
     }
 
     public void setRaca(String raca) {
-        this.raca = raca;
+        this.racaDog = raca;
     }
 
     public Integer getPeso() {
-        return peso;
+        return pesoDog;
     }
 
     public void setPeso(Integer peso) {
-        this.peso = peso;
+        this.pesoDog = peso;
     }
 
-    public Integer getIdade() {
-        return idade;
+    public Integer getIdadeDog() {
+        return idadeDog;
     }
 
-    public void setIdade(Integer idade) {
-        this.idade = idade;
+    public void setIdadeDog(Integer idadeDog) {
+        this.idadeDog = idadeDog;
     }
 
     @Override
@@ -53,21 +53,21 @@ public class Dog {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Dog dog = (Dog) o;
-        return Objects.equals(nome, dog.nome) && Objects.equals(raca, dog.raca) && Objects.equals(peso, dog.peso) && Objects.equals(idade, dog.idade);
+        return Objects.equals(nomeDog, dog.nomeDog) && Objects.equals(racaDog, dog.racaDog) && Objects.equals(pesoDog, dog.pesoDog) && Objects.equals(idadeDog, dog.idadeDog);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(nome, raca, peso, idade);
+        return Objects.hash(nomeDog, racaDog, pesoDog, idadeDog);
     }
 
     @Override
     public String toString() {
         return "Dog{" +
-                "nome='" + nome + '\'' +
-                ", raca='" + raca + '\'' +
-                ", peso=" + peso +
-                ", idade=" + idade +
+                "nome='" + nomeDog + '\'' +
+                ", raca='" + racaDog + '\'' +
+                ", peso=" + pesoDog +
+                ", idadeDog=" + idadeDog +
                 '}';
     }
 }
