@@ -9,13 +9,12 @@ public class Dog {
     private Integer peso;
     private Integer idade;
 
-    public Dog() {
+    public Dog(String nome, String raca, Integer peso, Integer idade) {
         this.nome = nome;
         this.raca = raca;
         this.peso = peso;
         this.idade = idade;
     }
-
 
     public String getNome() {
         return nome;

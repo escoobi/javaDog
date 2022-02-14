@@ -6,9 +6,9 @@ public class Main {
     public static void main(String[] args) {
         /* System.out.printf("Estamos aqui!");*/
 
-        Dog dog = new Dog();
+        Dog dog = new Dog("Totó","Vira-Lata", 30, 5);
 
-        System.out.printf(dog.toString());
+        System.out.println(dog.getNome());
 
         Livro livro = new Livro("O Investidor Inteligente", 2021, 623);
         System.out.println(livro);
