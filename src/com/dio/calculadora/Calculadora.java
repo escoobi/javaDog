@@ -21,20 +21,22 @@ public class Calculadora {
         System.out.println("Dividir: " + dividir);
         System.out.println("Subtrair: " + subtrair);
         System.out.println("Multiplicar: " + multiplicar);
-
-
+     
     }
 
-    public static int somar(int a, int b){
+    public static int somar(int a, int b) {
         return a + b;
     }
-    public static int subtrair(int a, int b){
+
+    public static int subtrair(int a, int b) {
         return a - b;
     }
-    public static int dividir(int a, int b){
+
+    public static int dividir(int a, int b) {
         return a / b;
     }
-    public static int multiplicar(int a, int b){
+
+    public static int multiplicar(int a, int b) {
         return a * b;
     }
 }
