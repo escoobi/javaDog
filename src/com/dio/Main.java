@@ -3,6 +3,7 @@ package com.dio;
 import com.dio.model.Dog;
 
 public class Main {
+
     public static void main(String[] args) {
         /* System.out.printf("Estamos aqui!");*/
 
@@ -11,6 +12,7 @@ public class Main {
         System.out.println(dog.getNome());
 
         Livro livro = new Livro("O Investidor Inteligente", 2021, 623);
+
         System.out.println(livro);
     }
 }
