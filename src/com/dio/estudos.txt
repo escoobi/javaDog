@@ -18,3 +18,7 @@ Aula 2 — <?visibilidade?><?tipo?><?modificador?>retorno nome (<?parametros?>)<
 
                 Nomes dos métodos: utilizar verbo + substantivo utilizando notação camelo.
                                   Exemplo: executarSaldo(); salvarPessoas(); percorrerLista();
+
+
+/****************************************************************************/
+

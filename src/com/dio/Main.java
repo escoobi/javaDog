@@ -6,43 +6,44 @@ public class Main {
 
 
     /*
-    * Tipos de variaveis: textual, numeral, logico e objeto
-    * Utilização
-    * Short 0
-    * Byte 0
-    * Int 0
-    * long 0L
-    * float 0.0F
-    * double 0.0D
-    * char '\u0000'
-    * String e Objetos = null
-    * Boolean False
-    * ---------------------------------------
-    * Conceituação
-    * Instância : objeto
-    * Classe: classe
-    * Local: dentro de métodos
-    * Parâmentro: Na assinatura do método
-    *
-    * ----------------------------------------
-    * Não devem começar com números
-    * "$" e "_" são permitidos porem evitar usar
-    * São case-sentive
-    * Sem espaços
-    * Não pode conter palavras reservadas
-    * ------------------------------
-    * pós-fixado: exp++ ou exp--
-    * pré-fixado: ++exp ou --exp
-    * aritmético -> Multiplicativo -> Aditivo
-    * atribuição
-    * */
+     * Tipos de variaveis: textual, numeral, logico e objeto
+     * Utilização
+     * Short 0
+     * Byte 0
+     * Int 0
+     * long 0L
+     * float 0.0F
+     * double 0.0D
+     * char '\u0000'
+     * String e Objetos = null
+     * Boolean False
+     * ---------------------------------------
+     * Conceituação
+     * Instância : objeto
+     * Classe: classe
+     * Local: dentro de métodos
+     * Parâmentro: Na assinatura do método
+     *
+     * ----------------------------------------
+     * Não devem começar com números
+     * "$" e "_" são permitidos porem evitar usar
+     * São case-sentive
+     * Sem espaços
+     * Não pode conter palavras reservadas
+     * ------------------------------
+     * pós-fixado: exp++ ou exp--
+     * pré-fixado: ++exp ou --exp
+     * aritmético -> Multiplicativo -> Aditivo
+     * atribuição
+     * */
+
 
     public static void main(String[] args) {
         /* System.out.printf("Estamos aqui!");*/
         System.out.println("Utilizando sobrecarga de método: ");
         System.out.println(Sobrecarga.calcularArea(12));
         System.out.println(Sobrecarga.calcularArea(12.9d, 86.2d));
-        System.out.println(Sobrecarga.calcularArea(70.89d, 110.55d,55.02d));
+        System.out.println(Sobrecarga.calcularArea(70.89d, 110.55d, 55.02d));
 
 
         int i = 3;
@@ -80,8 +81,7 @@ public class Main {
         Boolean bo2 = false;
 
 
-
-        Dog dog = new Dog("Totó","Vira-Lata", 30, 5);
+        Dog dog = new Dog("Totó", "Vira-Lata", 30, 5);
 
         System.out.println(dog.getNome());
 
@@ -126,7 +126,7 @@ public class Main {
         long l = 500L;
         int k = 35;
         float f = 3.5F;
-        double d= f;
+        double d = f;
 
         System.out.println("d: " + d);
 
@@ -168,7 +168,7 @@ public class Main {
         System.out.println("c % b: " + r5);
     }
 
-    private static void prePos(){
+    private static void prePos() {
         int k = 10;
 
         int i = ++k;
@@ -180,36 +180,36 @@ public class Main {
         System.out.println("x: " + x);
     }
 
-   private static void usabilidadeCasting(){
-       /*Casting*/
+    private static void usabilidadeCasting() {
+        /*Casting*/
 
-       byte b1;
-       short s1 = 1000; //downcasting
-       b1 = (byte) s1;
+        byte b1;
+        short s1 = 1000; //downcasting
+        b1 = (byte) s1;
 
-       long l1;
-       int i1 = 10; //upcasting
-       l1 = i1;
+        long l1;
+        int i1 = 10; //upcasting
+        l1 = i1;
 
-       int i2;
-       long l2 = 1000000000000000000L;//downcasting
-       i2 = (int) l2;
+        int i2;
+        long l2 = 1000000000000000000L;//downcasting
+        i2 = (int) l2;
 
-       int i3;
-       long l3 = 10000L;//upcasting neste caso!
-       i3 = (int) l3;
+        int i3;
+        long l3 = 10000L;//upcasting neste caso!
+        i3 = (int) l3;
 
-       double d1;
-       float f1 = 10.5F;//upcasting
-       d1 = f1;
+        double d1;
+        float f1 = 10.5F;//upcasting
+        d1 = f1;
 
-       b1 = (byte) l2;
-       System.out.println("Convertendo Long para Byte (trucando valor): " + b1);
-   }
+        b1 = (byte) l2;
+        System.out.println("Convertendo Long para Byte (trucando valor): " + b1);
+    }
 
 }
 
-class Livro{
+class Livro {
     private String nome;
     private Integer ano;
     private Integer numeroPagina;
