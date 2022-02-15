@@ -39,6 +39,12 @@ public class Main {
 
     public static void main(String[] args) {
         /* System.out.printf("Estamos aqui!");*/
+        System.out.println("Utilizando sobrecarga de método: ");
+        System.out.println(Sobrecarga.calcularArea(12));
+        System.out.println(Sobrecarga.calcularArea(12.9d, 86.2d));
+        System.out.println(Sobrecarga.calcularArea(70.89d, 110.55d,55.02d));
+
+
         int i = 3;
         System.out.println(10 - 5 * 2 + --i);
 
