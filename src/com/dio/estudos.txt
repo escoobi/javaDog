@@ -1,0 +1,20 @@
+Aula 1 — Métodos > é um pedaço de um código (sub-rotina) disponibilizada por uma Classe.
+Aula 2 — <?visibilidade?><?tipo?><?modificador?>retorno nome (<?parametros?>)<?exceções>corpo
+       — Visibilidade: public., protected ou private.
+       — Tipo: concreto ou abstrato.
+       — Modificador: static ou final.
+       — Retorno: tido de dado ou void.
+       — Nome: nome fornecido ao método.
+       — Parâmetro: parâmetro que pode receber.
+
+       Nota importante
+                public static R N (P){..}
+
+                Particularidades > Ass. = nome + parâmetros > ex: soma(double num1, double num2)
+                Construtor > Cria o método
+                Destrutor > Destroy o método
+
+                O parâmetro pode ser apenas um valor ou pode ser uma referência para algum objeto.
+
+                Nomes dos métodos: utilizar verbo + substantivo utilizando notação camelo.
+                                  Exemplo: executarSaldo(); salvarPessoas(); percorrerLista();
