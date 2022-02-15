@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
         /* System.out.printf("Estamos aqui!");*/
 
-        System.out.println();
+        usabilidadeCasting();
 
         byte b1 = 10;
         byte b2 = 20;
@@ -138,6 +138,34 @@ public class Main {
         System.out.println("j: " + j);
         System.out.println("x: " + x);
     }
+
+   private static void usabilidadeCasting(){
+       /*Casting*/
+
+       byte b1;
+       short s1 = 1000; //downcasting
+       b1 = (byte) s1;
+
+       long l1;
+       int i1 = 10; //upcasting
+       l1 = i1;
+
+       int i2;
+       long l2 = 1000000000000000000L;//downcasting
+       i2 = (int) l2;
+
+       int i3;
+       long l3 = 10000L;//upcasting neste caso!
+       i3 = (int) l3;
+
+       double d1;
+       float f1 = 10.5F;//upcasting
+       d1 = f1;
+
+       b1 = (byte) l2;
+       System.out.println("Convertendo Long para Byte (trucando valor): " + b1);
+   }
+
 }
 
 class Livro{
