@@ -4,8 +4,43 @@ import com.dio.model.Dog;
 
 public class Main {
 
+
+    /*
+    * Tipos de variaveis: textual, numeral, logico e objeto
+    * Utilização
+    * Short 0
+    * Byte 0
+    * Int 0
+    * long 0L
+    * float 0.0F
+    * double 0.0D
+    * char '\u0000'
+    * String e Objetos = null
+    * Boolean False
+    * ---------------------------------------
+    * Conceituação
+    * Instância : objeto
+    * Classe: classe
+    * Local: dentro de métodos
+    * Parâmentro: Na assinatura do método
+    *
+    * ----------------------------------------
+    * Não devem começar com números
+    * "$" e "_" são permitidos porem evitar usar
+    * São case-sentive
+    * Sem espaços
+    * Não pode conter palavras reservadas
+    * ------------------------------
+    * pós-fixado: exp++ ou exp--
+    * pré-fixado: ++exp ou --exp
+    * aritmético -> Multiplicativo -> Aditivo
+    * atribuição
+    * */
+
     public static void main(String[] args) {
         /* System.out.printf("Estamos aqui!");*/
+        int i = 3;
+        System.out.println(10 - 5 * 2 + --i);
 
         usabilidadeCasting();
 
