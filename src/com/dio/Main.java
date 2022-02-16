@@ -40,6 +40,13 @@ public class Main {
 
     public static void main(String[] args) {
         /* System.out.printf("Estamos aqui!");*/
+        int count = 0;
+        do {
+            System.out.println(count);
+            ++count;
+        }while (count < 5);
+
+
         System.out.println("Utilizando sobrecarga de método: ");
         System.out.println(Sobrecarga.calcularArea(12));
         System.out.println(Sobrecarga.calcularArea(12.9d, 86.2d));
